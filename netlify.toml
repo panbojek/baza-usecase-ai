@@ -1,0 +1,10 @@
+# Konfiguracja budowania dla Netlify.
+# Dzięki temu po podpięciu repozytorium z GitHuba Netlify sam wie,
+# jak zbudować i co opublikować — nic nie trzeba klikać ręcznie.
+
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "20"
