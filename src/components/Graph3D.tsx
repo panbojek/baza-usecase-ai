@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react'
 import ForceGraph3D from 'react-force-graph-3d'
 import SpriteText from 'three-spritetext'
+import { forceX, forceY, forceZ } from 'd3-force-3d'
 import { catColor } from '../data/cats'
 import type { GraphLink, GraphNode } from '../types'
 
@@ -19,8 +20,19 @@ export function Graph3D({ data, width, height, filteredIds, sel, onSelect }: Pro
   const fgRef = useRef<any>(null)
   const fitted = useRef(false)
 
+  // Ten sam układ sił co w 2D (tu z trzecią osią Z): umiarkowane odpychanie,
+  // zwarte krawędzie i delikatne przyciąganie do środka — trzyma niepołączone
+  // grupy blisko rdzenia, zamiast pozwalać im odlecieć.
   useEffect(() => {
     fitted.current = false
+    const fg = fgRef.current
+    if (!fg) return
+    fg.d3Force('charge')?.strength(-60)
+    fg.d3Force('link')?.distance(30).strength(0.35)
+    fg.d3Force('x', forceX(0).strength(0.08))
+    fg.d3Force('y', forceY(0).strength(0.08))
+    fg.d3Force('z', forceZ(0).strength(0.08))
+    fg.d3ReheatSimulation?.()
   }, [data])
 
   // OrbitControls: zoom kółkiem podąża za kursorem (jak w widoku 2D),
