@@ -1,10 +1,14 @@
-import { useEffect, useRef, useState } from 'react'
+import { forwardRef, useEffect, useImperativeHandle, useRef, useState } from 'react'
 import ForceGraph2D from 'react-force-graph-2d'
 import { forceX, forceY } from 'd3-force-3d'
 import { catColor } from '../data/cats'
 import type { GraphLink, GraphNode } from '../types'
 
 const endpointId = (v: any): string => (typeof v === 'object' && v ? v.id : v)
+
+export interface GraphHandle {
+  resetView: () => void
+}
 
 interface Props {
   data: { nodes: GraphNode[]; links: GraphLink[] }
@@ -15,10 +19,28 @@ interface Props {
   onSelect: (id: string) => void
 }
 
-export function Graph2D({ data, width, height, filteredIds, sel, onSelect }: Props) {
+export const Graph2D = forwardRef<GraphHandle, Props>(function Graph2D(
+  { data, width, height, filteredIds, sel, onSelect },
+  ref,
+) {
   const fgRef = useRef<any>(null)
   const fitted = useRef(false)
   const [hovered, setHovered] = useState<string | null>(null)
+
+  // Reset: odepnij przeciągnięte węzły, ponów układ i dopasuj kadr.
+  useImperativeHandle(ref, () => ({
+    resetView() {
+      const fg = fgRef.current
+      if (!fg) return
+      data.nodes.forEach((n: any) => {
+        n.fx = null
+        n.fy = null
+      })
+      fg.d3ReheatSimulation?.()
+      fitted.current = false
+      setTimeout(() => fg.zoomToFit?.(500, 60), 60)
+    },
+  }))
 
   // układ sił + dopasowanie widoku raz na zestaw danych
   useEffect(() => {
@@ -27,11 +49,11 @@ export function Graph2D({ data, width, height, filteredIds, sel, onSelect }: Pro
     if (!fg) return
     // umiarkowane odpychanie (dość, by rozdzielić kropki, nie tyle, by rozrzucić wyspy)
     fg.d3Force('charge')?.strength(-60)
-    // zwarte klastry: krótkie, mocne krawędzie
-    fg.d3Force('link')?.distance(30).strength(0.35)
-    // delikatne przyciąganie do środka — trzyma niepołączone grupy blisko rdzenia
-    fg.d3Force('x', forceX(0).strength(0.08))
-    fg.d3Force('y', forceY(0).strength(0.08))
+    // luźniejsze klastry: dłuższe, słabsze krawędzie (bliżej przewiewnego 3D)
+    fg.d3Force('link')?.distance(42).strength(0.22)
+    // delikatniejsze przyciąganie do środka — mniej ściśnięcia, wciąż trzyma wyspy przy rdzeniu
+    fg.d3Force('x', forceX(0).strength(0.045))
+    fg.d3Force('y', forceY(0).strength(0.045))
     fg.d3ReheatSimulation?.()
   }, [data])
 
@@ -107,4 +129,4 @@ export function Graph2D({ data, width, height, filteredIds, sel, onSelect }: Pro
       }}
     />
   )
-}
+})

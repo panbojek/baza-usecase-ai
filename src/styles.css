@@ -124,6 +124,8 @@ button { font-family: inherit; }
 .gmode { position: absolute; left: 16px; top: 14px; display: flex; gap: 6px; }
 .gmode button { font-family: var(--ph-font-mono); font-size: 11px; padding: 4px 10px; border-radius: 6px; border: 1px solid rgba(255,255,255,0.28); background: transparent; color: rgba(255,255,255,0.7); cursor: pointer; }
 .gmode button.active { background: var(--ph-accent); border-color: var(--ph-accent); color: #fff; }
+.gmode .greset { margin-left: 10px; }
+.gmode .greset:hover { background: rgba(255, 255, 255, 0.12); color: #fff; }
 .gloading { position: absolute; inset: 0; display: grid; place-items: center; color: rgba(255,255,255,0.7); font-size: 13px; }
 
 /* EMPTY */

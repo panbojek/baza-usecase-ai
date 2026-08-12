@@ -1,7 +1,8 @@
-import { useEffect, useRef } from 'react'
+import { forwardRef, useEffect, useImperativeHandle, useRef } from 'react'
 import ForceGraph3D from 'react-force-graph-3d'
 import SpriteText from 'three-spritetext'
 import { catColor } from '../data/cats'
+import type { GraphHandle } from './Graph2D'
 import type { GraphLink, GraphNode } from '../types'
 
 const endpointId = (v: any): string => (typeof v === 'object' && v ? v.id : v)
@@ -15,13 +16,25 @@ interface Props {
   onSelect: (id: string) => void
 }
 
-export function Graph3D({ data, width, height, filteredIds, sel, onSelect }: Props) {
+export const Graph3D = forwardRef<GraphHandle, Props>(function Graph3D(
+  { data, width, height, filteredIds, sel, onSelect },
+  ref,
+) {
   const fgRef = useRef<any>(null)
   const fitted = useRef(false)
 
   useEffect(() => {
     fitted.current = false
   }, [data])
+
+  // Reset = powrót do domyślnej kamery startowej (na wprost, dystans 1000) —
+  // dokładnie widok „po wczytaniu". Bez zoomToFit (odjeżdżał, mieszcząc odległe
+  // wyspy) i bez reheat (ten psuje render 3D). Tylko animacja kamery.
+  useImperativeHandle(ref, () => ({
+    resetView() {
+      fgRef.current?.cameraPosition?.({ x: 0, y: 0, z: 1000 }, { x: 0, y: 0, z: 0 }, 700)
+    },
+  }))
 
   // OrbitControls: zoom kółkiem podąża za kursorem (jak w widoku 2D),
   // zamiast zawsze przybliżać do środka sceny. Kontrolki bywają gotowe
@@ -68,12 +81,6 @@ export function Graph3D({ data, width, height, filteredIds, sel, onSelect }: Pro
       }}
       linkOpacity={0.65}
       onNodeClick={(n: any) => onSelect(n.id)}
-      onEngineStop={() => {
-        if (!fitted.current) {
-          fgRef.current?.zoomToFit(600, 60)
-          fitted.current = true
-        }
-      }}
       nodeThreeObjectExtend={true}
       nodeThreeObject={(n: any) => {
         // etykieta tylko dla węzłów w filtrze albo zaznaczonego — mniej bałaganu w 3D
@@ -91,4 +98,4 @@ export function Graph3D({ data, width, height, filteredIds, sel, onSelect }: Pro
       }}
     />
   )
-}
+})

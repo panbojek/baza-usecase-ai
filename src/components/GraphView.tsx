@@ -2,7 +2,7 @@ import { Suspense, lazy, useEffect, useMemo, useRef, useState } from 'react'
 import { useStore } from '../store'
 import { toGraphData } from '../lib/graph'
 import type { UseCase } from '../types'
-import { Graph2D } from './Graph2D'
+import { Graph2D, type GraphHandle } from './Graph2D'
 
 // three.js doładowuje się dopiero po przełączeniu na 3D
 const Graph3D = lazy(() => import('./Graph3D').then((m) => ({ default: m.Graph3D })))
@@ -28,6 +28,7 @@ export function GraphView({ items, filteredIds }: { items: UseCase[]; filteredId
   const { state, dispatch } = useStore()
   const { ref, size } = useMeasure()
   const [mode, setMode] = useState<Mode>('2d')
+  const graphRef = useRef<GraphHandle>(null)
 
   const data = useMemo(() => toGraphData(items), [items])
   const onSelect = (id: string) => dispatch({ type: 'select', id })
@@ -40,10 +41,10 @@ export function GraphView({ items, filteredIds }: { items: UseCase[]; filteredId
         // przed montażem kolejnego — brak reużycia kontekstu 2D/WebGL
         <div key={mode} style={{ position: 'absolute', inset: 0 }}>
           {mode === '2d' ? (
-            <Graph2D {...shared} />
+            <Graph2D ref={graphRef} {...shared} />
           ) : (
             <Suspense fallback={<div className="gloading mono">// ładowanie widoku 3D…</div>}>
-              <Graph3D {...shared} />
+              <Graph3D ref={graphRef} {...shared} />
             </Suspense>
           )}
         </div>
@@ -55,6 +56,9 @@ export function GraphView({ items, filteredIds }: { items: UseCase[]; filteredId
         </button>
         <button className={mode === '3d' ? 'active' : ''} onClick={() => setMode('3d')}>
           3D
+        </button>
+        <button className="greset" onClick={() => graphRef.current?.resetView()} title="Reset widoku">
+          ⟲ Reset
         </button>
       </div>
       <div className="ghint">
