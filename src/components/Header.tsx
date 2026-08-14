@@ -52,14 +52,20 @@ export function Header({ onOpenVault }: Props) {
         ))}
       </div>
 
-      <button className="btn btn-ghost" onClick={onOpenVault} title="Wczytaj folder z plikami .md">
-        <span style={{ display: 'inline-flex', alignItems: 'center', gap: 7 }}>
-          <IconFolder /> Folder .md
-        </span>
-      </button>
-      <button className="btn btn-primary" onClick={() => dispatch({ type: 'openDialog' })}>
-        + Nowy wpis
-      </button>
+      {/* Edycja bazy tylko lokalnie (dev). Na wersji webowej (produkcja) te przyciski
+          są ukryte — treść jest wbudowana w build, a nowe wpisy dodajemy przez repo. */}
+      {import.meta.env.DEV && (
+        <>
+          <button className="btn btn-ghost" onClick={onOpenVault} title="Wczytaj folder z plikami .md">
+            <span style={{ display: 'inline-flex', alignItems: 'center', gap: 7 }}>
+              <IconFolder /> Folder .md
+            </span>
+          </button>
+          <button className="btn btn-primary" onClick={() => dispatch({ type: 'openDialog' })}>
+            + Nowy wpis
+          </button>
+        </>
+      )}
     </header>
   )
 }
