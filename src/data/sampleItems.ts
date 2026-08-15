@@ -193,6 +193,21 @@ export const SAMPLE_ITEMS: UseCase[] = [
     "thumbnail": "/thumbnails/robobee-latajacy-mikrorobot.jpg"
   },
   {
+    "id": "latajacy-robot-kaskader-spider-man-disney",
+    "cat": "robotyka",
+    "name": "Latający robot-kaskader Spider-Man (Disney)",
+    "tags": [
+      "robot",
+      "rozrywka",
+      "autonomia"
+    ],
+    "date": "2026-08-15",
+    "link": "https://www.linkedin.com/posts/genai-works_thats-pure-magic-spider-mans-stuntman-activity-7493702819561099264-_f_I",
+    "desc": "Imagineerzy Disneya stworzyli animatroniczną figurę Spider-Mana, która samodzielnie wykonuje akrobacje w powietrzu — leci ~25 m, decydując o obrotach i hamowaniu w czasie rzeczywistym. Występuje w Avengers Campus.",
+    "long": "",
+    "thumbnail": "/thumbnails/latajacy-robot-kaskader-spider-man-disney.jpg"
+  },
+  {
     "id": "autonomiczne-ciezarowki-w-chinach",
     "cat": "transport",
     "name": "Autonomiczne ciężarówki w Chinach",
