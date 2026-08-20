@@ -208,6 +208,36 @@ export const SAMPLE_ITEMS: UseCase[] = [
     "thumbnail": "/thumbnails/latajacy-robot-kaskader-spider-man-disney.jpg"
   },
   {
+    "id": "muzyka-ai-od-pozwow-do-wspolnych-produktow",
+    "cat": "marketing",
+    "name": "Muzyka AI: od pozwów do wspólnych produktów",
+    "tags": [
+      "muzyka",
+      "prawo",
+      "biznes"
+    ],
+    "date": "2026-08-15",
+    "link": "https://promptowy.com/muzyka-ai-pozwy-ugody-suno-udio-spotify/",
+    "desc": "Wytwórnie muzyczne najpierw pozwały generatory muzyki AI (Suno, Udio), a półtora roku później ogłaszały z nimi wspólne produkty — historia sporu, ugód i biznesowego zwrotu wokół muzyki tworzonej przez AI.",
+    "long": "",
+    "thumbnail": "/thumbnails/muzyka-ai-od-pozwow-do-wspolnych-produktow.webp"
+  },
+  {
+    "id": "hop-earth-cala-planeta-jako-grywalna-mapa-3d",
+    "cat": "wideo",
+    "name": "Hop.Earth — cała planeta jako grywalna mapa 3D",
+    "tags": [
+      "generacja",
+      "3d",
+      "mapa"
+    ],
+    "date": "2026-08-15",
+    "link": "https://www.instagram.com/p/Dbyc90GF7qd/?img_index=2",
+    "desc": "Silnik Hop.Earth generuje w przeglądarce trójwymiarowy, przejezdny świat w czasie rzeczywistym — z danych OpenStreetMap i satelitarnej rzeźby terenu. Cała planeta staje się grywalną mapą bez pobierania; można wpisać własny adres i tam pojeździć.",
+    "long": "",
+    "thumbnail": "/thumbnails/hop-earth-cala-planeta-jako-grywalna-mapa-3d.jpg"
+  },
+  {
     "id": "autonomiczne-ciezarowki-w-chinach",
     "cat": "transport",
     "name": "Autonomiczne ciężarówki w Chinach",
