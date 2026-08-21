@@ -238,6 +238,21 @@ export const SAMPLE_ITEMS: UseCase[] = [
     "thumbnail": "/thumbnails/hop-earth-cala-planeta-jako-grywalna-mapa-3d.jpg"
   },
   {
+    "id": "rzadowy-raport-o-marce-polska-z-halucynacjami-ai",
+    "cat": "spoleczenstwo",
+    "name": "Rządowy raport o marce Polska z halucynacjami AI",
+    "tags": [
+      "administracja",
+      "halucynacje",
+      "wpadka"
+    ],
+    "date": "2026-08-15",
+    "link": "https://pl.linkedin.com/posts/chriskwacz_od-rana-trwa-ogromna-burza-nad-raportem-activity-7496291501661155328-L0uz",
+    "desc": "Głośna afera wokół rządowego raportu „Polaków portret własny. DNA marki Polska” (dofinansowanego przez Ministerstwo Sportu i Turystyki). Wiele wskazuje, że powstał przy użyciu słabego modelu AI, który mocno halucynował — i nikt tego potem nie zweryfikował.",
+    "long": "",
+    "thumbnail": "/thumbnails/rzadowy-raport-o-marce-polska-z-halucynacjami-ai.jpg"
+  },
+  {
     "id": "autonomiczne-ciezarowki-w-chinach",
     "cat": "transport",
     "name": "Autonomiczne ciężarówki w Chinach",
