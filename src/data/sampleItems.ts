@@ -608,6 +608,21 @@ export const SAMPLE_ITEMS: UseCase[] = [
     "thumbnail": "/thumbnails/egzoszkielet-wspomagajacy-ruch.jpg"
   },
   {
+    "id": "szczoteczka-dyson-camerajet-z-ai",
+    "cat": "zdrowie",
+    "name": "Szczoteczka Dyson CameraJet z AI",
+    "tags": [
+      "wizja",
+      "iot",
+      "higiena"
+    ],
+    "date": "2026-09-02",
+    "link": "https://www.instagram.com/p/Dcy1PAnDxbk/?img_index=1",
+    "desc": "Dyson CameraJet łączy wbudowaną kamerę z AI, która wykrywa miejsca między zębami wymagające doczyszczenia i kieruje w nie precyzyjny strumień wody — z podglądem na żywo w aplikacji MyDyson.",
+    "long": "",
+    "thumbnail": "/thumbnails/szczoteczka-dyson-camerajet-z-ai.jpg"
+  },
+  {
     "id": "aitana-wirtualna-influencerka",
     "cat": "marketing",
     "name": "Aitana — wirtualna influencerka",
@@ -793,6 +808,21 @@ export const SAMPLE_ITEMS: UseCase[] = [
     "desc": "Zdalne przejęcie kontroli nad domowymi robotami sprzątającymi.",
     "long": "",
     "thumbnail": "/thumbnails/zhackowane-roboty-sprzatajace.jpg"
+  },
+  {
+    "id": "koszulka-oszukujaca-monitoring-ai",
+    "cat": "bezpieczenstwo",
+    "name": "Koszulka oszukująca monitoring AI",
+    "tags": [
+      "wizja",
+      "prywatność",
+      "obchodzenie-ai"
+    ],
+    "date": "2026-08-30",
+    "link": "https://www.instagram.com/p/DcqToRmgEIH/?img_index=2",
+    "desc": "Berliński artysta Simon Weckert zaprojektował koszulkę „Digital Camouflage” ze wzorem, który myli systemy wizyjne AI (YOLO) i uniemożliwia rozpoznanie noszącej ją osoby. Projekt powstał w reakcji na wdrożenie monitoringu AI na placu Kottbusser Tor w Berlinie.",
+    "long": "",
+    "thumbnail": "/thumbnails/koszulka-oszukujaca-monitoring-ai.jpg"
   },
   {
     "id": "ai-wystawia-mandaty-w-czasie-rzeczywistym",
