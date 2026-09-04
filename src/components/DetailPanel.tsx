@@ -4,21 +4,31 @@ import { catName } from '../data/cats'
 import { relatedTo } from '../lib/graph'
 import type { UseCase } from '../types'
 import { Thumb } from './Thumb'
-import { IconClose, IconExternal } from './icons'
+import { IconClose, IconExternal, IconStar } from './icons'
 
 export function DetailPanel({ sel }: { sel: UseCase }) {
   const { state, dispatch } = useStore()
   const related = useMemo(() => relatedTo(state.items, sel), [state.items, sel])
   const linkLabel = sel.link.replace(/^https?:\/\//, '')
   const paragraphs = [sel.desc, ...sel.long.split(/\n\s*\n/)].map((s) => s.trim()).filter(Boolean)
+  const fav = state.favorites.has(sel.id)
 
   return (
     <div className="detail">
       <div className="dhead">
         <div className="kat">{catName(sel.cat)}</div>
-        <button className="xbtn" onClick={() => dispatch({ type: 'select', id: null })} title="Zamknij (Esc)">
-          <IconClose />
-        </button>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+          <button
+            className={`favstar-inline ${fav ? 'active' : ''}`}
+            onClick={() => dispatch({ type: 'toggleFavorite', id: sel.id })}
+            title={fav ? 'Usuń z ulubionych' : 'Dodaj do ulubionych'}
+          >
+            <IconStar size={16} filled={fav} />
+          </button>
+          <button className="xbtn" onClick={() => dispatch({ type: 'select', id: null })} title="Zamknij (Esc)">
+            <IconClose />
+          </button>
+        </div>
       </div>
 
       <div className="dname">{sel.name}</div>

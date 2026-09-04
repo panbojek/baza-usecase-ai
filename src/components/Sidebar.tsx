@@ -2,6 +2,7 @@ import { useMemo } from 'react'
 import { useStore } from '../store'
 import { CATS, catColor } from '../data/cats'
 import { allEdges, uniqueTags } from '../lib/graph'
+import { IconStar } from './icons'
 
 export function Sidebar() {
   const { state, dispatch } = useStore()
@@ -22,6 +23,17 @@ export function Sidebar() {
 
   return (
     <aside className="sidebar">
+      <button
+        className={`catbtn favbtn ${state.favOnly ? 'active' : ''}`}
+        onClick={() => dispatch({ type: 'toggleFavOnly' })}
+      >
+        <span className="catlabel">
+          <IconStar size={14} filled={state.favOnly} />
+          <span className="catname">Ulubione</span>
+        </span>
+        <span className="cnt">{state.favorites.size}</span>
+      </button>
+
       <div>
         <div className="sec-h">Kategorie</div>
         {cats.map((c) => (

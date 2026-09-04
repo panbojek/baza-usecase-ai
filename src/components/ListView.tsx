@@ -2,13 +2,15 @@ import { useStore } from '../store'
 import { catName, catColor } from '../data/cats'
 import type { UseCase } from '../types'
 import { Thumb } from './Thumb'
-import { IconExternal } from './icons'
+import { IconExternal, IconStar } from './icons'
 
 export function ListView({ items }: { items: UseCase[] }) {
   const { state, dispatch } = useStore()
   return (
     <div className="list">
-      {items.map((i) => (
+      {items.map((i) => {
+        const fav = state.favorites.has(i.id)
+        return (
         <div
           key={i.id}
           className={`row ${state.sel === i.id ? 'sel' : ''}`}
@@ -31,6 +33,16 @@ export function ListView({ items }: { items: UseCase[] }) {
             {catName(i.cat)}
           </div>
           <div className="rdate">{i.date}</div>
+          <button
+            className={`favstar-inline ${fav ? 'active' : ''}`}
+            onClick={(e) => {
+              e.stopPropagation()
+              dispatch({ type: 'toggleFavorite', id: i.id })
+            }}
+            title={fav ? 'Usuń z ulubionych' : 'Dodaj do ulubionych'}
+          >
+            <IconStar size={15} filled={fav} />
+          </button>
           <a
             className="rlink"
             href={i.link}
@@ -42,7 +54,8 @@ export function ListView({ items }: { items: UseCase[] }) {
             <IconExternal />
           </a>
         </div>
-      ))}
+        )
+      })}
     </div>
   )
 }
