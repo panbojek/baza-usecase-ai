@@ -238,6 +238,21 @@ export const SAMPLE_ITEMS: UseCase[] = [
     "thumbnail": "/thumbnails/hop-earth-cala-planeta-jako-grywalna-mapa-3d.jpg"
   },
   {
+    "id": "telewizja-2-0-nieskonczone-transmisje-z-minimax-h3",
+    "cat": "wideo",
+    "name": "Telewizja 2.0 — nieskończone transmisje z Minimax H3",
+    "tags": [
+      "generacja",
+      "streaming",
+      "telewizja"
+    ],
+    "date": "2026-09-04",
+    "link": "https://www.facebook.com/share/r/1CCs5jA1Af/",
+    "desc": "Model Minimax H3 generuje wideo w krótkich, kilkusekundowych segmentach, które można sklejać w ciągłe, teoretycznie nieskończone transmisje — seriale, animacje czy sitcomy tworzone na bieżąco przez AI zamiast nagrywane z wyprzedzeniem.",
+    "long": "",
+    "thumbnail": "/thumbnails/telewizja-2-0-minimax-h3-nieskonczone-transmisje.jpg"
+  },
+  {
     "id": "rzadowy-raport-o-marce-polska-z-halucynacjami-ai",
     "cat": "spoleczenstwo",
     "name": "Rządowy raport o marce Polska z halucynacjami AI",
