@@ -297,6 +297,37 @@ export const SAMPLE_ITEMS: UseCase[] = [
     "thumbnail": "/thumbnails/volonaut-latajacy-jednoslad.jpg"
   },
   {
+    "id": "tesla-robotaxi-w-austin",
+    "cat": "transport",
+    "name": "Tesla Robotaxi w Austin",
+    "tags": [
+      "autonomia",
+      "robotaxi",
+      "austin"
+    ],
+    "date": "2026-09-04",
+    "link": "https://x.com/Tesla/status/2095588745936298039",
+    "desc": "Oficjalny post Tesli z materiałem wideo podpisanym „The future has arrived in Austin” — nawiązanie do rozwijanej przez firmę usługi autonomicznych przejazdów (Robotaxi) w Austin w Teksasie.",
+    "long": "",
+    "thumbnail": "/thumbnails/tesla-robotaxi-w-austin.jpg"
+  },
+  {
+    "id": "cennik-cybercab-kontra-uber",
+    "cat": "transport",
+    "name": "Cennik Cybercab kontra Uber",
+    "tags": [
+      "robotaxi",
+      "cybercab",
+      "cennik",
+      "uber"
+    ],
+    "date": "2026-09-04",
+    "link": "https://x.com/teslaflexx/status/2095692014750781852",
+    "desc": "Zestawienie cen przejazdu Tesla Cybercab z cenami Ubera — porównanie mające pokazać, o ile tańszy może być przejazd autonomiczną taksówką bez kierowcy.",
+    "long": "",
+    "thumbnail": "/thumbnails/cybercab-cennik-vs-uber.jpg"
+  },
+  {
     "id": "czy-da-sie-to-zrobic-w-ai",
     "cat": "wideo",
     "name": "Czy da się to zrobić w AI?",
