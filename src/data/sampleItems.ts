@@ -343,6 +343,38 @@ export const SAMPLE_ITEMS: UseCase[] = [
     "thumbnail": "/thumbnails/cybercab-cennik-vs-uber.jpg"
   },
   {
+    "id": "falszywy-news-grok-w-cybercabie-namierzyl-nakaz-ar",
+    "cat": "transport",
+    "name": "Fałszywy news: Grok w Cybercabie \"namierzył\" nakaz aresztowania",
+    "tags": [
+      "robotaxi",
+      "cybercab",
+      "dezinformacja",
+      "hoax"
+    ],
+    "date": "2026-09-06",
+    "link": "https://x.com/panzerwong/status/2096516444226015357",
+    "desc": "[FAKE, obalone przez Community Note] Viralowe nagranie sugerowało, że pokładowy Grok w Tesli Cybercab rozpoznał u pasażera nakaz aresztowania i zawiózł go prosto na policję. Notatka społecznościowa pod postem demaskuje to jako inscenizację YouTubera (Jeremy Judkins), który sam poprosił AI o odegranie tej roli — prawdziwy Cybercab nie ma dostępu do baz policyjnych ani takiej funkcji. Dobry przykład na szkolenie: jak łatwo o wiarygodnie wyglądający fake dotyczący AI.",
+    "long": "",
+    "thumbnail": "/thumbnails/falszywy-news-grok-w-cybercabie-namierzyl-nakaz-ar.jpg"
+  },
+  {
+    "id": "robot-sprzatajacy-tesla-cybercab",
+    "cat": "transport",
+    "name": "Robot sprzątający Tesla Cybercab",
+    "tags": [
+      "robotyka",
+      "robotaxi",
+      "cybercab",
+      "utrzymanie"
+    ],
+    "date": "2026-09-04",
+    "link": "https://x.com/cb_doge/status/2095962486566732236",
+    "desc": "Krótkie nagranie pokazuje robota czyszczącego wnętrze Tesli Cybercab między przejazdami — wizja bezobsługowego utrzymania autonomicznej floty, gdzie jeden robot sprząta po drugim.",
+    "long": "",
+    "thumbnail": "/thumbnails/robot-sprzatajacy-tesla-cybercab.jpg"
+  },
+  {
     "id": "czy-da-sie-to-zrobic-w-ai",
     "cat": "wideo",
     "name": "Czy da się to zrobić w AI?",
@@ -623,7 +655,8 @@ export const SAMPLE_ITEMS: UseCase[] = [
     "date": "2026-05-08",
     "link": "https://www.linkedin.com/posts/making-needles-with-lasers-ugcPost-7458626535097516032-6Qid/",
     "desc": "Precyzyjne wszczepianie mikrochipów z użyciem laserowo formowanych igieł.",
-    "long": ""
+    "long": "",
+    "thumbnail": "/thumbnails/wszczepianie-chipu-iglami-z-lasera.jpg"
   },
   {
     "id": "glosowy-bot-elevenlabs-w-nfz",
@@ -637,7 +670,8 @@ export const SAMPLE_ITEMS: UseCase[] = [
     "date": "2026-05-19",
     "link": "https://www.linkedin.com/feed/update/urn:li:activity:7462211972978192384/",
     "desc": "Głosowy asystent AI obsługuje pacjentów dzwoniących do NFZ.",
-    "long": ""
+    "long": "",
+    "thumbnail": "/thumbnails/glosowy-bot-elevenlabs-w-nfz.jpg"
   },
   {
     "id": "egzoszkielet-wspomagajacy-ruch",
@@ -765,7 +799,8 @@ export const SAMPLE_ITEMS: UseCase[] = [
     "date": "2025-06-15",
     "link": "https://www.genspark.ai/agents?id=0f3f3538-e64f-47ba-94de-538bbea5f3a0",
     "desc": "Agent Genspark samodzielnie opracowuje kosztorys przetargu budowlanego.",
-    "long": ""
+    "long": "",
+    "thumbnail": "/thumbnails/agent-wycenia-przetarg-budowlany.jpg"
   },
   {
     "id": "ekspresywny-glosowy-agent-wsparcia",
