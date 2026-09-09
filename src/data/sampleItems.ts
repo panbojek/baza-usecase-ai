@@ -343,22 +343,6 @@ export const SAMPLE_ITEMS: UseCase[] = [
     "thumbnail": "/thumbnails/cybercab-cennik-vs-uber.jpg"
   },
   {
-    "id": "falszywy-news-grok-w-cybercabie-namierzyl-nakaz-ar",
-    "cat": "transport",
-    "name": "Fałszywy news: Grok w Cybercabie \"namierzył\" nakaz aresztowania",
-    "tags": [
-      "robotaxi",
-      "cybercab",
-      "dezinformacja",
-      "hoax"
-    ],
-    "date": "2026-09-06",
-    "link": "https://x.com/panzerwong/status/2096516444226015357",
-    "desc": "[FAKE, obalone przez Community Note] Viralowe nagranie sugerowało, że pokładowy Grok w Tesli Cybercab rozpoznał u pasażera nakaz aresztowania i zawiózł go prosto na policję. Notatka społecznościowa pod postem demaskuje to jako inscenizację YouTubera (Jeremy Judkins), który sam poprosił AI o odegranie tej roli — prawdziwy Cybercab nie ma dostępu do baz policyjnych ani takiej funkcji. Dobry przykład na szkolenie: jak łatwo o wiarygodnie wyglądający fake dotyczący AI.",
-    "long": "",
-    "thumbnail": "/thumbnails/falszywy-news-grok-w-cybercabie-namierzyl-nakaz-ar.jpg"
-  },
-  {
     "id": "robot-sprzatajacy-tesla-cybercab",
     "cat": "transport",
     "name": "Robot sprzątający Tesla Cybercab",
@@ -628,6 +612,21 @@ export const SAMPLE_ITEMS: UseCase[] = [
     "desc": "Wykorzystanie treści generowanych przez AI w kontekście postępowania sądowego.",
     "long": "",
     "thumbnail": "/thumbnails/ai-w-sali-sadowej.jpg"
+  },
+  {
+    "id": "falszywy-news-grok-w-cybercabie-namierzyl-nakaz-ar",
+    "cat": "oszustwa",
+    "name": "Fałszywy news: Grok w Cybercabie \"namierzył\" nakaz aresztowania",
+    "tags": [
+      "dezinformacja",
+      "hoax",
+      "cybercab"
+    ],
+    "date": "2026-09-06",
+    "link": "https://x.com/panzerwong/status/2096516444226015357",
+    "desc": "[FAKE, obalone przez Community Note] Viralowe nagranie sugerowało, że pokładowy Grok w Tesli Cybercab rozpoznał u pasażera nakaz aresztowania i zawiózł go prosto na policję. Notatka społecznościowa pod postem demaskuje to jako inscenizację YouTubera (Jeremy Judkins), który sam poprosił AI o odegranie tej roli — prawdziwy Cybercab nie ma dostępu do baz policyjnych ani takiej funkcji. Dobry przykład na szkolenie: jak łatwo o wiarygodnie wyglądający fake dotyczący AI.",
+    "long": "",
+    "thumbnail": "/thumbnails/falszywy-news-grok-w-cybercabie-namierzyl-nakaz-ar.jpg"
   },
   {
     "id": "agent-hospital-wirtualny-szpital-agentow",
