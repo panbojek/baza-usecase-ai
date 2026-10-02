@@ -991,5 +991,21 @@ export const SAMPLE_ITEMS: UseCase[] = [
     "desc": "Anthropic wyjaśnia, jak Claude znakuje treści tworzone przez AI — m.in. metadanymi C2PA (Content Credentials) w obrazach — żeby dało się rozpoznać materiał wygenerowany przez sztuczną inteligencję. Temat wprost powiązany z obowiązkami przejrzystości w AI Act.",
     "long": "",
     "thumbnail": "/thumbnails/jak-claude-oznacza-tresci-generowane-przez-ai.png"
+  },
+  {
+    "id": "ryzyko-kosztow-narzedzi-ai-na-przykladzie-heygen",
+    "cat": "praca",
+    "name": "Ryzyko kosztów narzędzi AI na przykładzie HeyGen",
+    "tags": [
+      "koszty",
+      "heygen",
+      "avatar",
+      "ryzyko-projektowe"
+    ],
+    "date": "2026-09-29",
+    "link": "https://www.linkedin.com/feed/update/urn:li:activity:7510666272142069760/",
+    "desc": "Wpis Roberta Bojka o realnym ryzyku projektowym związanym z kosztami narzędzi AI. Przy podobnej długości materiałów z awatarem w HeyGen, tych samych ustawieniach i tym samym abonamencie w połowie projektu kredytów schodziło 2–3 razy więcej. Support przyznał (nie wprost), że wycena może się tymczasowo różnić i poprzedniej stawki nie da się przywrócić. Autor podejrzewa świadomą politykę dostawców — optymalizację marży przez zmianę przelicznika kredytów. Wniosek: koszt narzędzia AI jest zmienną, którą dostawca może zmienić w trakcie projektu, więc trzeba go ująć w ryzykach i budżecie.",
+    "long": "",
+    "thumbnail": "/thumbnails/ryzyko-kosztow-narzedzi-ai-na-przykladzie-heygen.jpg"
   }
 ]
