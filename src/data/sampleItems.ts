@@ -1007,5 +1007,37 @@ export const SAMPLE_ITEMS: UseCase[] = [
     "desc": "Wpis Roberta Bojka o realnym ryzyku projektowym związanym z kosztami narzędzi AI. Przy podobnej długości materiałów z awatarem w HeyGen, tych samych ustawieniach i tym samym abonamencie w połowie projektu kredytów schodziło 2–3 razy więcej. Support przyznał (nie wprost), że wycena może się tymczasowo różnić i poprzedniej stawki nie da się przywrócić. Autor podejrzewa świadomą politykę dostawców — optymalizację marży przez zmianę przelicznika kredytów. Wniosek: koszt narzędzia AI jest zmienną, którą dostawca może zmienić w trakcie projektu, więc trzeba go ująć w ryzykach i budżecie.",
     "long": "",
     "thumbnail": "/thumbnails/ryzyko-kosztow-narzedzi-ai-na-przykladzie-heygen.jpg"
+  },
+  {
+    "id": "fryzjer-w-stroju-z-sensorami-trenuje-roboty",
+    "cat": "robotyka",
+    "name": "Fryzjer w stroju z sensorami trenuje roboty",
+    "tags": [
+      "dane-treningowe",
+      "uczenie",
+      "sensory",
+      "praca"
+    ],
+    "date": "2026-09-23",
+    "link": "https://www.instagram.com/reels/DdoUtD5AjeJ/",
+    "desc": "W Indiach fryzjer pracuje w specjalnym stroju z sensorami, które śledzą jego ruchy podczas strzyżenia. Zebrane dane mogą posłużyć do trenowania AI i robotów, które uczą się wykonywać czynności fizyczne wykonywane dziś przez ludzi. Źródło materiału: Economic Times / Harsh Goenka.",
+    "long": "",
+    "thumbnail": "/thumbnails/fryzjer-w-stroju-z-sensorami-trenuje-roboty.jpg"
+  },
+  {
+    "id": "skaner-uvi-ai-ocenia-stan-auta-w-kilka-sekund",
+    "cat": "praca",
+    "name": "Skaner UVI: AI ocenia stan auta w kilka sekund",
+    "tags": [
+      "wizja",
+      "inspekcja",
+      "motoryzacja",
+      "wypożyczalnie"
+    ],
+    "date": "2026-10-04",
+    "link": "https://www.instagram.com/reels/DeEPFFrgYMr/",
+    "desc": "Auto przejeżdża przez stanowisko UVI, a ponad 20 kamer robi około 1000 zdjęć. System AI analizuje karoserię, opony i podwozie, po czym generuje raport z wgnieceniami, korozją, wyciekami, zużyciem opon oraz brakującymi lub uszkodzonymi częściami. Zastosowania: szybsza wycena w handlu używanymi autami i wykrywanie zmian po zwrocie w wypożyczalni. Materiał nie dowodzi, że ocena człowieka przestaje być potrzebna. Źródło materiału: Wall Street Apes / X, 03.10.2026.",
+    "long": "",
+    "thumbnail": "/thumbnails/skaner-uvi-ai-ocenia-stan-auta-w-kilka-sekund.jpg"
   }
 ]
