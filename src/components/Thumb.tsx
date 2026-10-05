@@ -28,7 +28,7 @@ const iconSizeFor = (cls: string): number =>
   cls.includes('rel-thumb') ? 18 : cls.includes('rthumb') ? 30 : cls.includes('dthumb') ? 54 : 46
 
 function PlatformGlyph({ platform, size }: { platform: Platform; size: number }) {
-  const knock = 'var(--ph-bg-soft)'
+  const knock = 'var(--color-mist)'
   const common = { width: size, height: size, viewBox: '0 0 24 24' }
   switch (platform) {
     case 'youtube':
@@ -56,7 +56,7 @@ function PlatformGlyph({ platform, size }: { platform: Platform; size: number })
       return (
         <svg {...common}>
           <rect x="2" y="2" width="20" height="20" rx="3.5" fill="currentColor" />
-          <text x="12" y="16.6" textAnchor="middle" fontSize="11" fontWeight="700" fontFamily="Sora, sans-serif" fill={knock}>
+          <text x="12" y="16.6" textAnchor="middle" fontSize="11" fontWeight="700" fontFamily="Geist, sans-serif" fill={knock}>
             in
           </text>
         </svg>

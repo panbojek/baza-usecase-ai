@@ -19,9 +19,7 @@ export function Header({ onOpenVault }: Props) {
 
   return (
     <header className="header">
-      <div className="logo">
-        PROCESS<b>HUB</b>
-      </div>
+      <img className="brand-logo" src="/brand/boyek-logo-graphite.svg" alt="BOYEK.IO" />
       <div className="vbar" />
       <div className="apptitle">Baza use-casów AI</div>
 

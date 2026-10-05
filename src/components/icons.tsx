@@ -14,7 +14,7 @@ const base = (size: number, stroke: string) => ({
   strokeLinejoin: 'round' as const,
 })
 
-export const IconSearch = ({ size = 15, stroke = '#1F293C' }: IconProps) => (
+export const IconSearch = ({ size = 15, stroke = 'currentColor' }: IconProps) => (
   <svg {...base(size, stroke)}>
     <circle cx="11" cy="11" r="7" />
     <path d="M20 20l-4-4" />

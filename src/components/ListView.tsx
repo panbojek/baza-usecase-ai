@@ -28,7 +28,7 @@ export function ListView({ items }: { items: UseCase[] }) {
               </span>
             ))}
           </div>
-          <div className="rkat" style={{ color: catColor(i.cat) }}>
+          <div className="rkat">
             <span className="catdot" style={{ background: catColor(i.cat) }} />
             {catName(i.cat)}
           </div>

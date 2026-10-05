@@ -35,7 +35,12 @@ export function Sidebar() {
       </button>
 
       <div>
-        <div className="sec-h">Kategorie</div>
+        <div className="sec-h">
+          <span className="idx">[01]</span>
+          <span>Kategorie</span>
+          <span className="rule" />
+          <span className="plus">+</span>
+        </div>
         {cats.map((c) => (
           <button
             key={c.key}
@@ -43,10 +48,7 @@ export function Sidebar() {
             onClick={() => dispatch({ type: 'setCat', cat: c.key })}
           >
             <span className="catlabel">
-              <span
-                className="catdot"
-                style={{ background: c.key === 'all' ? 'transparent' : catColor(c.key), boxShadow: c.key === 'all' ? 'none' : undefined }}
-              />
+              <span className="catdot" style={{ background: c.key === 'all' ? 'transparent' : catColor(c.key) }} />
               <span className="catname">{c.name}</span>
             </span>
             <span className="cnt">{c.count}</span>
@@ -55,7 +57,12 @@ export function Sidebar() {
       </div>
 
       <div>
-        <div className="sec-h">Tagi</div>
+        <div className="sec-h">
+          <span className="idx">[02]</span>
+          <span>Tagi</span>
+          <span className="rule" />
+          <span className="plus">+</span>
+        </div>
         <div className="tags">
           {tags.map((t) => (
             <button

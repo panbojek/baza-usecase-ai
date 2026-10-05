@@ -60,7 +60,7 @@ export const Graph3D = forwardRef<GraphHandle, Props>(function Graph3D(
       width={width}
       height={height}
       graphData={data}
-      backgroundColor="#1F293C"
+      backgroundColor="#0A0A0A"
       controlType="orbit"
       showNavInfo={false}
       nodeRelSize={4}
@@ -73,7 +73,7 @@ export const Graph3D = forwardRef<GraphHandle, Props>(function Graph3D(
       linkColor={(l: any) => {
         const on = sel && (endpointId(l.source) === sel || endpointId(l.target) === sel)
         const vis = filteredIds.has(endpointId(l.source)) && filteredIds.has(endpointId(l.target))
-        return on ? '#EC7354' : vis ? 'rgba(255,255,255,0.30)' : 'rgba(255,255,255,0.06)'
+        return on ? '#FFFFFF' : vis ? 'rgba(255,255,255,0.30)' : 'rgba(255,255,255,0.06)'
       }}
       linkWidth={(l: any) => {
         const on = sel && (endpointId(l.source) === sel || endpointId(l.target) === sel)
@@ -90,8 +90,8 @@ export const Graph3D = forwardRef<GraphHandle, Props>(function Graph3D(
         const sprite: any = new SpriteText(label)
         sprite.color = on ? '#FFFFFF' : 'rgba(255,255,255,0.78)'
         sprite.textHeight = on ? 5 : 4
-        sprite.fontFace = 'Sora, sans-serif'
-        sprite.fontWeight = on ? '600' : '500'
+        sprite.fontFace = 'Geist, sans-serif'
+        sprite.fontWeight = on ? '500' : '400'
         sprite.position.y = 8 + n.deg * 0.7
         sprite.material.depthWrite = false
         return sprite

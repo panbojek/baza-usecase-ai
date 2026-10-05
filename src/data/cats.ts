@@ -18,21 +18,20 @@ export const catName = (key: string): string =>
   CATS.find((c) => c.key === key)?.name ?? ''
 
 /**
- * Kolory kategorii do kodowania na grafie i liście. Paleta kategorialna
- * dobrana pod ciemne (granatowe) tło grafu — wyraźnie odróżnialna, a zarazem
- * spójna wizualnie. Robotyka trzyma kolor akcentu marki (#EC7354).
+ * Kolory kategorii do kodowania na grafie i liście — świadomy wyjątek od monochromu KV:
+ * to kodowanie danych, nie akcent marki. Paleta dobrana pod ciemne tło grafu.
  */
 export const CAT_COLORS: Record<string, string> = {
-  robotyka: '#EC7354',      // koral (akcent marki)
-  transport: '#F4A950',     // bursztyn
-  wideo: '#E9C46A',         // złoto
-  oszustwa: '#E76F8E',      // róż
-  zdrowie: '#5FB49C',       // morski
-  marketing: '#B98CD6',     // lawenda
-  praca: '#6DA8E0',         // błękit
-  bezpieczenstwo: '#D0553E',// ceglasty
-  spoleczenstwo: '#9AA7B5', // stalowy
-  'ai-act': '#8CC152',      // zielony
+  robotyka: '#EC7354',
+  transport: '#F4A950',
+  wideo: '#E9C46A',
+  oszustwa: '#E76F8E',
+  zdrowie: '#5FB49C',
+  marketing: '#B98CD6',
+  praca: '#6DA8E0',
+  bezpieczenstwo: '#D0553E',
+  spoleczenstwo: '#9AA7B5',
+  'ai-act': '#8CC152',
 }
 
 export const catColor = (key: string): string => CAT_COLORS[key] ?? '#9AA7B5'

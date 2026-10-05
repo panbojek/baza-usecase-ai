@@ -43,7 +43,7 @@ export function DetailPanel({ sel }: { sel: UseCase }) {
       {sel.link && (
         <a className="dlink" href={sel.link} target="_blank" rel="noopener noreferrer">
           <span>{linkLabel}</span>
-          <span style={{ color: 'var(--ph-accent)', display: 'inline-flex' }}>
+          <span style={{ display: 'inline-flex' }}>
             <IconExternal />
           </span>
         </a>
@@ -70,7 +70,12 @@ export function DetailPanel({ sel }: { sel: UseCase }) {
 
       {related.length > 0 && (
         <div>
-          <div className="sec-h">Powiązane · wspólne tagi</div>
+          <div className="sec-h">
+            <span className="idx">[01]</span>
+            <span>Powiązane · wspólne tagi</span>
+            <span className="rule" />
+            <span className="plus">+</span>
+          </div>
           {related.map(({ item, shared }) => (
             <div key={item.id} className="rel-item" onClick={() => dispatch({ type: 'select', id: item.id })}>
               <Thumb item={item} className="rel-thumb" />

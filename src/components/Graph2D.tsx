@@ -63,7 +63,7 @@ export const Graph2D = forwardRef<GraphHandle, Props>(function Graph2D(
       width={width}
       height={height}
       graphData={data}
-      backgroundColor="#1F293C"
+      backgroundColor="#0A0A0A"
       nodeRelSize={5}
       cooldownTicks={160}
       d3VelocityDecay={0.34}
@@ -78,7 +78,7 @@ export const Graph2D = forwardRef<GraphHandle, Props>(function Graph2D(
       linkColor={(l: any) => {
         const on = sel && (endpointId(l.source) === sel || endpointId(l.target) === sel)
         const vis = filteredIds.has(endpointId(l.source)) && filteredIds.has(endpointId(l.target))
-        return on ? '#EC7354' : vis ? 'rgba(255,255,255,0.18)' : 'rgba(255,255,255,0.04)'
+        return on ? '#FFFFFF' : vis ? 'rgba(255,255,255,0.18)' : 'rgba(255,255,255,0.04)'
       }}
       linkWidth={(l: any) => {
         const on = sel && (endpointId(l.source) === sel || endpointId(l.target) === sel)
@@ -118,7 +118,7 @@ export const Graph2D = forwardRef<GraphHandle, Props>(function Graph2D(
         if (showLabel) {
           const label = n.name.length > 24 ? n.name.slice(0, 23) + '…' : n.name
           const fontSize = active ? 5 : 3.8
-          ctx.font = `${active ? 600 : 500} ${fontSize}px Sora, sans-serif`
+          ctx.font = `${active ? 500 : 400} ${fontSize}px Geist, sans-serif`
           ctx.textAlign = 'center'
           ctx.textBaseline = 'bottom'
           const y = n.y - rr - 1.5
