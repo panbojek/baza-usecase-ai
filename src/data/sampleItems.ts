@@ -1039,5 +1039,21 @@ export const SAMPLE_ITEMS: UseCase[] = [
     "desc": "Auto przejeżdża przez stanowisko UVI, a ponad 20 kamer robi około 1000 zdjęć. System AI analizuje karoserię, opony i podwozie, po czym generuje raport z wgnieceniami, korozją, wyciekami, zużyciem opon oraz brakującymi lub uszkodzonymi częściami. Zastosowania: szybsza wycena w handlu używanymi autami i wykrywanie zmian po zwrocie w wypożyczalni. Materiał nie dowodzi, że ocena człowieka przestaje być potrzebna. Źródło materiału: Wall Street Apes / X, 03.10.2026.",
     "long": "",
     "thumbnail": "/thumbnails/skaner-uvi-ai-ocenia-stan-auta-w-kilka-sekund.jpg"
+  },
+  {
+    "id": "nola-ai-samodzielnie-przepisuje-leki-na-tradzik",
+    "cat": "zdrowie",
+    "name": "Nola: AI samodzielnie przepisuje leki na trądzik",
+    "tags": [
+      "diagnostyka",
+      "wizja",
+      "recepty",
+      "regulacje"
+    ],
+    "date": "2026-10-06",
+    "link": "https://www.instagram.com/reels/DeJcfXQgzys/",
+    "desc": "Firma Nola ogłosiła, że uzyskała w USA pierwszą zgodę pozwalającą jej systemowi AI prowadzić cały proces przepisywania leków bez zatwierdzania każdej recepty przez specjalistę. Rozwiązanie startuje w Utah i dotyczy spersonalizowanego leczenia trądziku: pacjent skanuje twarz i odpowiada na kilka pytań, model ocenia trądzik, układa plan, przepisuje leki i śledzi reakcję skóry. Cały proces ma zajmować około 15 minut, a leczenie kosztować 5 dolarów miesięcznie. Lekarz pozostaje dostępny w aplikacji. Dane o firmie i zgodzie pochodzą z materiału (źródło: Luis Wenus / X, 05.10.2026) i nie zostały niezależnie zweryfikowane.",
+    "long": "",
+    "thumbnail": "/thumbnails/nola-ai-samodzielnie-przepisuje-leki-na-tradzik.jpg"
   }
 ]
