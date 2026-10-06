@@ -1055,5 +1055,21 @@ export const SAMPLE_ITEMS: UseCase[] = [
     "desc": "Firma Nola ogłosiła, że uzyskała w USA pierwszą zgodę pozwalającą jej systemowi AI prowadzić cały proces przepisywania leków bez zatwierdzania każdej recepty przez specjalistę. Rozwiązanie startuje w Utah i dotyczy spersonalizowanego leczenia trądziku: pacjent skanuje twarz i odpowiada na kilka pytań, model ocenia trądzik, układa plan, przepisuje leki i śledzi reakcję skóry. Cały proces ma zajmować około 15 minut, a leczenie kosztować 5 dolarów miesięcznie. Lekarz pozostaje dostępny w aplikacji. Dane o firmie i zgodzie pochodzą z materiału (źródło: Luis Wenus / X, 05.10.2026) i nie zostały niezależnie zweryfikowane.",
     "long": "",
     "thumbnail": "/thumbnails/nola-ai-samodzielnie-przepisuje-leki-na-tradzik.jpg"
+  },
+  {
+    "id": "tavus-griffin-model-ai-rozmawiajacy-twarza-w-twarz",
+    "cat": "wideo",
+    "name": "Tavus Griffin: model AI rozmawiający twarzą w twarz",
+    "tags": [
+      "awatar",
+      "wideo",
+      "rozmowa-na-żywo",
+      "test-turinga"
+    ],
+    "date": "2026-10-01",
+    "link": "https://www.tavus.io/griffin",
+    "desc": "Tavus przedstawia Griffina — „Human Interaction Model\": model video-to-video, który prowadzi rozmowę na żywo twarzą w twarz. Słucha i patrzy jednocześnie, reaguje mimiką, śmiechem, pauzami i gestami, może przerywać i być przerywany, a każdą klatkę obrazu (całą scenę, nie tylko twarz) generuje w czasie rzeczywistym z jednego zdjęcia referencyjnego. Według firmy 48% uczestników badania po minutowej rozmowie wideo uznało Griffina za prawdziwego człowieka (wcześniejsze systemy Tavus: maks. 2%). Dostępna jest na razie wersja badawcza Griffin-Lite dla wybranych testerów. Liczby pochodzą z materiału producenta i nie były niezależnie zweryfikowane.",
+    "long": "",
+    "thumbnail": "/thumbnails/tavus-griffin-model-ai-rozmawiajacy-twarza-w-twarz.jpg"
   }
 ]
