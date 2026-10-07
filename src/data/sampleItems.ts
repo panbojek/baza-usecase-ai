@@ -233,7 +233,7 @@ export const SAMPLE_ITEMS: UseCase[] = [
     ],
     "date": "2026-08-15",
     "link": "https://www.instagram.com/p/Dbyc90GF7qd/?img_index=2",
-    "desc": "Silnik Hop.Earth generuje w przeglądarce trójwymiarowy, przejezdny świat w czasie rzeczywistym — z danych OpenStreetMap i satelitarnej rzeźby terenu. Cała planeta staje się grywalną mapą bez pobierania; można wpisać własny adres i tam pojeździć.",
+    "desc": "Silnik Hop.Earth generuje w przeglądarce przejezdny świat 3D z danych OpenStreetMap i satelitarnej rzeźby terenu. Można wpisać własny adres i tam pojeździć.",
     "long": "",
     "thumbnail": "/thumbnails/hop-earth-cala-planeta-jako-grywalna-mapa-3d.jpg"
   },
@@ -248,7 +248,7 @@ export const SAMPLE_ITEMS: UseCase[] = [
     ],
     "date": "2026-09-04",
     "link": "https://www.facebook.com/share/r/1CCs5jA1Af/",
-    "desc": "Model Minimax H3 generuje wideo w krótkich, kilkusekundowych segmentach, które można sklejać w ciągłe, teoretycznie nieskończone transmisje — seriale, animacje czy sitcomy tworzone na bieżąco przez AI zamiast nagrywane z wyprzedzeniem.",
+    "desc": "Model Minimax H3 generuje wideo w kilkusekundowych segmentach, które można sklejać w ciągłe transmisje. Seriale i sitcomy mogą powstawać na bieżąco, zamiast być nagrywane z wyprzedzeniem.",
     "long": "",
     "thumbnail": "/thumbnails/telewizja-2-0-minimax-h3-nieskonczone-transmisje.jpg"
   },
@@ -263,7 +263,7 @@ export const SAMPLE_ITEMS: UseCase[] = [
     ],
     "date": "2026-08-15",
     "link": "https://pl.linkedin.com/posts/chriskwacz_od-rana-trwa-ogromna-burza-nad-raportem-activity-7496291501661155328-L0uz",
-    "desc": "Głośna afera wokół rządowego raportu „Polaków portret własny. DNA marki Polska” (dofinansowanego przez Ministerstwo Sportu i Turystyki). Wiele wskazuje, że powstał przy użyciu słabego modelu AI, który mocno halucynował — i nikt tego potem nie zweryfikował.",
+    "desc": "Głośna afera wokół rządowego raportu „Polaków portret własny. DNA marki Polska\", który prawdopodobnie powstał z pomocą słabego modelu AI. Model mocno halucynował, a nikt tego nie zweryfikował.",
     "long": "",
     "thumbnail": "/thumbnails/rzadowy-raport-o-marce-polska-z-halucynacjami-ai.jpg"
   },
@@ -624,7 +624,7 @@ export const SAMPLE_ITEMS: UseCase[] = [
     ],
     "date": "2026-09-06",
     "link": "https://x.com/panzerwong/status/2096516444226015357",
-    "desc": "[FAKE, obalone przez Community Note] Viralowe nagranie sugerowało, że pokładowy Grok w Tesli Cybercab rozpoznał u pasażera nakaz aresztowania i zawiózł go prosto na policję. Notatka społecznościowa pod postem demaskuje to jako inscenizację YouTubera (Jeremy Judkins), który sam poprosił AI o odegranie tej roli — prawdziwy Cybercab nie ma dostępu do baz policyjnych ani takiej funkcji. Dobry przykład na szkolenie: jak łatwo o wiarygodnie wyglądający fake dotyczący AI.",
+    "desc": "[FAKE] Viral o Groku w Cybercabie, który rzekomo wykrył nakaz aresztowania pasażera i zawiózł go na policję. Community Note wyjaśnia, że to inscenizacja YouTubera, a takiej funkcji Cybercab nie ma.",
     "long": "",
     "thumbnail": "/thumbnails/falszywy-news-grok-w-cybercabie-namierzyl-nakaz-ar.jpg"
   },
@@ -900,7 +900,7 @@ export const SAMPLE_ITEMS: UseCase[] = [
     ],
     "date": "2026-08-30",
     "link": "https://www.instagram.com/p/DcqToRmgEIH/?img_index=2",
-    "desc": "Berliński artysta Simon Weckert zaprojektował koszulkę „Digital Camouflage” ze wzorem, który myli systemy wizyjne AI (YOLO) i uniemożliwia rozpoznanie noszącej ją osoby. Projekt powstał w reakcji na wdrożenie monitoringu AI na placu Kottbusser Tor w Berlinie.",
+    "desc": "Berliński artysta Simon Weckert zaprojektował koszulkę ze wzorem, który myli systemy wizyjne AI i uniemożliwia rozpoznanie noszącej ją osoby. Projekt powstał w reakcji na monitoring AI na placu Kottbusser Tor.",
     "long": "",
     "thumbnail": "/thumbnails/koszulka-oszukujaca-monitoring-ai.jpg"
   },
@@ -988,7 +988,7 @@ export const SAMPLE_ITEMS: UseCase[] = [
     ],
     "date": "2026-08-11",
     "link": "https://support.claude.com/en/articles/16266773-how-claude-marks-ai-generated-content",
-    "desc": "Anthropic wyjaśnia, jak Claude znakuje treści tworzone przez AI — m.in. metadanymi C2PA (Content Credentials) w obrazach — żeby dało się rozpoznać materiał wygenerowany przez sztuczną inteligencję. Temat wprost powiązany z obowiązkami przejrzystości w AI Act.",
+    "desc": "Anthropic wyjaśnia, jak Claude znakuje treści AI, m.in. metadanymi C2PA w obrazach. Temat wprost powiązany z obowiązkami przejrzystości w AI Act.",
     "long": "",
     "thumbnail": "/thumbnails/jak-claude-oznacza-tresci-generowane-przez-ai.png"
   },
@@ -1004,7 +1004,7 @@ export const SAMPLE_ITEMS: UseCase[] = [
     ],
     "date": "2026-09-29",
     "link": "https://www.linkedin.com/feed/update/urn:li:activity:7510666272142069760/",
-    "desc": "Wpis Roberta Bojka o realnym ryzyku projektowym związanym z kosztami narzędzi AI. Przy podobnej długości materiałów z awatarem w HeyGen, tych samych ustawieniach i tym samym abonamencie w połowie projektu kredytów schodziło 2–3 razy więcej. Support przyznał (nie wprost), że wycena może się tymczasowo różnić i poprzedniej stawki nie da się przywrócić. Autor podejrzewa świadomą politykę dostawców — optymalizację marży przez zmianę przelicznika kredytów. Wniosek: koszt narzędzia AI jest zmienną, którą dostawca może zmienić w trakcie projektu, więc trzeba go ująć w ryzykach i budżecie.",
+    "desc": "Przy tych samych ustawieniach i abonamencie HeyGen zużywał w połowie projektu 2–3 razy więcej kredytów. Koszt narzędzia AI to ryzyko projektowe, które dostawca może zmienić w trakcie.",
     "long": "",
     "thumbnail": "/thumbnails/ryzyko-kosztow-narzedzi-ai-na-przykladzie-heygen.jpg"
   },
@@ -1020,7 +1020,7 @@ export const SAMPLE_ITEMS: UseCase[] = [
     ],
     "date": "2026-09-23",
     "link": "https://www.instagram.com/reels/DdoUtD5AjeJ/",
-    "desc": "W Indiach fryzjer pracuje w specjalnym stroju z sensorami, które śledzą jego ruchy podczas strzyżenia. Zebrane dane mogą posłużyć do trenowania AI i robotów, które uczą się wykonywać czynności fizyczne wykonywane dziś przez ludzi. Źródło materiału: Economic Times / Harsh Goenka.",
+    "desc": "Indyjski fryzjer pracuje w stroju z sensorami, które rejestrują jego ruchy. Takie dane mogą posłużyć do trenowania robotów wykonujących czynności fizyczne.",
     "long": "",
     "thumbnail": "/thumbnails/fryzjer-w-stroju-z-sensorami-trenuje-roboty.jpg"
   },
@@ -1036,7 +1036,7 @@ export const SAMPLE_ITEMS: UseCase[] = [
     ],
     "date": "2026-10-04",
     "link": "https://www.instagram.com/reels/DeEPFFrgYMr/",
-    "desc": "Auto przejeżdża przez stanowisko UVI, a ponad 20 kamer robi około 1000 zdjęć. System AI analizuje karoserię, opony i podwozie, po czym generuje raport z wgnieceniami, korozją, wyciekami, zużyciem opon oraz brakującymi lub uszkodzonymi częściami. Zastosowania: szybsza wycena w handlu używanymi autami i wykrywanie zmian po zwrocie w wypożyczalni. Materiał nie dowodzi, że ocena człowieka przestaje być potrzebna. Źródło materiału: Wall Street Apes / X, 03.10.2026.",
+    "desc": "Auto przejeżdża przez stanowisko, ponad 20 kamer robi ok. 1000 zdjęć, a AI generuje raport uszkodzeń i zużycia. Przydaje się przy wycenie używanych aut i zwrotach w wypożyczalniach.",
     "long": "",
     "thumbnail": "/thumbnails/skaner-uvi-ai-ocenia-stan-auta-w-kilka-sekund.jpg"
   },
@@ -1052,7 +1052,7 @@ export const SAMPLE_ITEMS: UseCase[] = [
     ],
     "date": "2026-10-06",
     "link": "https://www.instagram.com/reels/DeJcfXQgzys/",
-    "desc": "Firma Nola ogłosiła, że uzyskała w USA pierwszą zgodę pozwalającą jej systemowi AI prowadzić cały proces przepisywania leków bez zatwierdzania każdej recepty przez specjalistę. Rozwiązanie startuje w Utah i dotyczy spersonalizowanego leczenia trądziku: pacjent skanuje twarz i odpowiada na kilka pytań, model ocenia trądzik, układa plan, przepisuje leki i śledzi reakcję skóry. Cały proces ma zajmować około 15 minut, a leczenie kosztować 5 dolarów miesięcznie. Lekarz pozostaje dostępny w aplikacji. Dane o firmie i zgodzie pochodzą z materiału (źródło: Luis Wenus / X, 05.10.2026) i nie zostały niezależnie zweryfikowane.",
+    "desc": "Według materiału Nola dostała w USA pierwszą zgodę na przepisywanie leków przez AI bez zatwierdzania każdej recepty przez lekarza. Start w Utah, leczenie trądziku, ok. 15 minut i 5 dolarów miesięcznie.",
     "long": "",
     "thumbnail": "/thumbnails/nola-ai-samodzielnie-przepisuje-leki-na-tradzik.jpg"
   },
@@ -1068,7 +1068,7 @@ export const SAMPLE_ITEMS: UseCase[] = [
     ],
     "date": "2026-10-01",
     "link": "https://www.tavus.io/griffin",
-    "desc": "Tavus przedstawia Griffina — „Human Interaction Model\": model video-to-video, który prowadzi rozmowę na żywo twarzą w twarz. Słucha i patrzy jednocześnie, reaguje mimiką, śmiechem, pauzami i gestami, może przerywać i być przerywany, a każdą klatkę obrazu (całą scenę, nie tylko twarz) generuje w czasie rzeczywistym z jednego zdjęcia referencyjnego. Według firmy 48% uczestników badania po minutowej rozmowie wideo uznało Griffina za prawdziwego człowieka (wcześniejsze systemy Tavus: maks. 2%). Dostępna jest na razie wersja badawcza Griffin-Lite dla wybranych testerów. Liczby pochodzą z materiału producenta i nie były niezależnie zweryfikowane.",
+    "desc": "Griffin od Tavus rozmawia z człowiekiem na żywo wideo i generuje całą scenę w czasie rzeczywistym. Według producenta 48% rozmówców uznało go po minucie za prawdziwego człowieka.",
     "long": "",
     "thumbnail": "/thumbnails/tavus-griffin-model-ai-rozmawiajacy-twarza-w-twarz.jpg"
   }
